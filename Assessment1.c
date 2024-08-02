@@ -2,9 +2,11 @@
 
 int main()
 {
+    //declaring necessary variables
    float num1, num2, res;
    int choice;
 
+   //using loop to continuously ask user for operations
    while (choice){
       printf("\n-----------Menu--------------\n");
       printf("1. Addition\n");
@@ -12,17 +14,20 @@ int main()
       printf("3. Multiplication\n");
       printf("4. Division\n");
 
-
+   //getting user choices
       printf("Enter Your Choice:");
       scanf("%d", &choice);
 
+   //getting first number
       printf("Enter first numbr: ");
       scanf("%f", &num1);
 
-
+   //getting second number
       printf("Enter second numbr: ");
       scanf("%f", &num2);
 
+
+   //based on choice performing selected operation
        switch(choice)
       {
          case 1:
@@ -46,7 +51,6 @@ int main()
             printf("\NInvalid choice !!!! ");
 
       }
-            printf("-------------------------\n");
 
    }
 
